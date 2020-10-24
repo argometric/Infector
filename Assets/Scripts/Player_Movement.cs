@@ -33,11 +33,11 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         movementInput = WASD.ReadValue<Vector2>();
-        
-        // if (movementInput.x != 0)
-        // {
-        //     myAvatar.localScale = new Vector2(Mathf.Sign(movementInput.x), 1);
-        // }
+
+        if (movementInput.x != 0)
+        {
+            myAvatar.localScale = new Vector2(Mathf.Sign(movementInput.x), 1);
+        }
     }
 
     private void FixedUpdate()
