@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4262891498019235940}
   - component: {fileID: 4262891498019235941}
   - component: {fileID: 9749055514270894}
+  - component: {fileID: 4691173478405532282}
   m_Layer: 0
   m_Name: Infector_Player
   m_TagString: Player
@@ -125,6 +126,25 @@ MonoBehaviour:
       m_Action: WASD
       m_Flags: 8
   movementSpeed: 5
+--- !u!95 &4691173478405532282
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262891498019235946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6776dddd34b61124cacb7b92f47840ef, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2746586962804049044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -195,6 +215,14 @@ PrefabInstance:
     - target: {fileID: 1711361744473212355, guid: 16e519967a8b4ab4798eca4f7120c186, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216030099745085118, guid: 16e519967a8b4ab4798eca4f7120c186, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7216030099745085118, guid: 16e519967a8b4ab4798eca4f7120c186, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16e519967a8b4ab4798eca4f7120c186, type: 3}

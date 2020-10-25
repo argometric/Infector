@@ -8,6 +8,7 @@ public class Player_Movement : MonoBehaviour
     //Components
     Rigidbody myRb;
     Transform myAvatar;
+    Animator myAnim;
 
     //Player movement
     [SerializeField] InputAction WASD;
@@ -27,6 +28,7 @@ public class Player_Movement : MonoBehaviour
     {
         myRb = GetComponent<Rigidbody>();
         myAvatar = transform.GetChild(0);
+        myAnim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -38,6 +40,8 @@ public class Player_Movement : MonoBehaviour
         {
             myAvatar.localScale = new Vector2(Mathf.Sign(movementInput.x), 1);
         }
+
+        myAnim.SetFloat("Speed", movementInput.magnitude);
     }
 
     private void FixedUpdate()
