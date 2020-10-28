@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Player_Movement : MonoBehaviour
 {
     //Components
-    Rigidbody2D myRb;
+    Rigidbody2Dgit myRb;
     Transform myAvatar;
     Animator myAnim;
 
