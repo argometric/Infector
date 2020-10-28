@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Player_Movement : MonoBehaviour
 {
     //Components
-    Rigidbody myRb;
+    Rigidbody2D myRb;
     Transform myAvatar;
     Animator myAnim;
 
@@ -26,7 +26,7 @@ public class Player_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myRb = GetComponent<Rigidbody>();
+        myRb = GetComponent<Rigidbody2D>();
         myAvatar = transform.GetChild(0);
         myAnim = GetComponent<Animator>();
     }
