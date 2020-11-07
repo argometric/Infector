@@ -99,7 +99,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6192743861384600928}
   m_Bounds:
-    m_Center: {x: -0.0015989542, y: -0.0011155605, z: 0}
+    m_Center: {x: -0.0015980005, y: -0.0011150837, z: 0}
     m_Extent: {x: 0.72290504, y: 1.0431049, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -172,7 +172,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.4533484, y: -21.803123}
+  m_Offset: {x: -0.009607792, y: -22.834213}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -183,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 8.143294, y: 2.1588364}
   m_EdgeRadius: 0
 --- !u!95 &7418655230299967864
 Animator:
@@ -223,8 +223,48 @@ MonoBehaviour:
     m_Id: 8aee6d2c-6c4f-4c70-87c7-f50a8676dfd8
     m_Processors: 
     m_Interactions: 
-    m_SingletonActionBindings: []
-  movementSpeed: 0
+    m_SingletonActionBindings:
+    - m_Name: 2D Vector
+      m_Id: 08e4c884-8f1a-4438-8679-105b7cc2f100
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: WASD
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 6142c653-3ba2-4c01-81e4-c3c1f1c49f1a
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: WASD
+      m_Flags: 8
+    - m_Name: down
+      m_Id: a31c64e6-af29-4ca3-bd7f-41b160f4f8e4
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: WASD
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 1687aba0-6894-47a8-9829-6b3c420ff642
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: WASD
+      m_Flags: 8
+    - m_Name: right
+      m_Id: b7613d5c-c0b3-4f87-8d6d-e0b411766c75
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: WASD
+      m_Flags: 8
+  movementSpeed: 5
 --- !u!1 &777311001882107569
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,8 +453,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 1480025342800765207}
   m_Bounds:
-    m_Center: {x: -0.001298964, y: 0.0018024445, z: 0}
-    m_Extent: {x: 0.7737049, y: 1.0779047, z: 0}
+    m_Center: {x: -0.0012951493, y: 0.001801014, z: 0}
+    m_Extent: {x: 0.7737048, y: 1.0779047, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &2318202049884345278
@@ -546,7 +586,7 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 129596059714847485}
   m_Bounds:
-    m_Center: {x: -0.07141018, y: -0.00084257126, z: 0}
+    m_Center: {x: -0.071410656, y: -0.0008444786, z: 0}
     m_Extent: {x: 5.35359, y: 6.0591555, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -650,8 +690,8 @@ MonoBehaviour:
   - {fileID: 6823027697624088783}
   - {fileID: 184826825660498689}
   m_Bounds:
-    m_Center: {x: -0.0014841557, y: 0.004999876, z: 0}
-    m_Extent: {x: 1.3382099, y: 2.1899993, z: 0}
+    m_Center: {x: -0.0014834404, y: 0.004999399, z: 0}
+    m_Extent: {x: 1.3382096, y: 2.1899989, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &3732640839684115063
@@ -875,8 +915,8 @@ MonoBehaviour:
   - {fileID: 7969813254655905528}
   - {fileID: 2155817172865217091}
   m_Bounds:
-    m_Center: {x: 11.924995, y: -15.260855, z: 0}
-    m_Extent: {x: 3.455, y: 4.289146, z: 0}
+    m_Center: {x: 11.925, y: -15.260857, z: 0}
+    m_Extent: {x: 3.455, y: 4.2891445, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &6642157658886508369
@@ -1045,8 +1085,8 @@ MonoBehaviour:
   - {fileID: 716630662979178831}
   - {fileID: 3576814232657615672}
   m_Bounds:
-    m_Center: {x: 0.00083065033, y: -0.00000166893, z: 0}
-    m_Extent: {x: 1.1841697, y: 1.7300005, z: 0}
+    m_Center: {x: 0.0008291006, y: -0.0000030994415, z: 0}
+    m_Extent: {x: 1.1841704, y: 1.73, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!1 &8531696461874009134
