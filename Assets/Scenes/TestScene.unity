@@ -10344,6 +10344,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scientist_Character
       objectReference: {fileID: 0}
+    - target: {fileID: 2656171556010196159, guid: 04db946577b63ab4faebd3f5bda26337, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744226893405352075, guid: 04db946577b63ab4faebd3f5bda26337, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7418655230299967864, guid: 04db946577b63ab4faebd3f5bda26337, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8913592948612868719, guid: 04db946577b63ab4faebd3f5bda26337, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

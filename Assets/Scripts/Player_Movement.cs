@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -40,12 +41,17 @@ public class Player_Movement : MonoBehaviour
         {
             myAvatar.localScale = new Vector2(Mathf.Sign(movementInput.x), 1);
         }
-
         myAnim.SetFloat("Speed", movementInput.magnitude);
+        if (movementInput.magnitude > 4)
+        {
+            Console.WriteLine("test");
+        }
     }
 
     private void FixedUpdate()
     {
+        Console.WriteLine("movementInput * movementSpeed");
+        Console.WriteLine((movementInput * movementSpeed));
         myRb.velocity = movementInput * movementSpeed;
     }
 }
